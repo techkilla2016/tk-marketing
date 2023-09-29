@@ -55,7 +55,7 @@ const Setting = () => {
 
 
     const handleUpdate = async () => {
-        console.log(userData)
+        // console.log(userData)
     }
 
     return (

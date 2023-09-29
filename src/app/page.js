@@ -13,7 +13,6 @@ export default function Home() {
   const router = useRouter();
   const [cookies] = useCookies()
   useEffect(() => {
-    console.log(cookies?.auth)
     if (!cookies?.auth) {
       router.push('/sign-in');
     }
