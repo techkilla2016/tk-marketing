@@ -3,6 +3,7 @@ main {
     height: 100%;
     padding-left: 320px;
     overflow: auto;
+
     header {
         height: 70px;
         width: 100%;
@@ -68,6 +69,16 @@ main {
     }
 }
 
-#search-bar-0-label{
+#search-bar-0-label {
     display: none;
+}
+
+.loadder-wraper {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: rgba($color: #000000, $alpha: 0.6);
 }

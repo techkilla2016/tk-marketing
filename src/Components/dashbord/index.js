@@ -20,10 +20,7 @@ const columns = [
     }, {
         dataField: 'phone',
         text: 'Phone No.'
-    }, {
-        dataField: 'phone',
-        text: 'Phone No.'
-    }, {
+    },  {
         dataField: 'country',
         text: 'Country'
     }, {
