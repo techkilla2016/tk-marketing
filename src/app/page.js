@@ -5,7 +5,6 @@ import Aside from '@/Components/aside'
 import { useCookies } from 'react-cookie'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
-import CityData from '@/data/city'
 
 
 
@@ -24,7 +23,7 @@ export default function Home() {
         <Aside />
         <main>
           <Container>
-            <Dashbord data={CityData} />
+            <Dashbord />
           </Container>
         </main>
       </div>
