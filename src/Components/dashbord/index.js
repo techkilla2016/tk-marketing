@@ -20,7 +20,7 @@ const columns = [
     }, {
         dataField: 'phone',
         text: 'Phone No.'
-    },  {
+    }, {
         dataField: 'country',
         text: 'Country'
     }, {
@@ -42,6 +42,10 @@ const columns = [
         dataField: 'utm_source',
         text: 'UTM Source'
     },
+    {
+        dataField: 'date',
+        text: 'Date'
+    },
 ];
 
 const Dashbord = () => {
@@ -54,9 +58,11 @@ const Dashbord = () => {
 
     useEffect(() => {
         axios.get(`https://techkilla-server.vercel.app/qr-solution`).then(res => {
+            console.log(res.data.data)
             const data = res?.data?.data?.map((item, index) => {
                 return {
                     ...item,
+                    date: new Date(item?.date).toLocaleDateString(),
                     id: index + 1
                 }
             })
